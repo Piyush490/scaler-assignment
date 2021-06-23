@@ -55,7 +55,7 @@ export class LoginComponent implements OnInit {
         .subscribe((apiResponse) => {
 
           if (apiResponse.status == 200) {
-            this.toastr.success("Login Successfull", "Welcome to Lets Meet");
+            this.toastr.success("Login Successfull", "Welcome to Meet");
             //console.log(apiResponse.data)
             
             Cookie.set('authToken', apiResponse.data.authToken);

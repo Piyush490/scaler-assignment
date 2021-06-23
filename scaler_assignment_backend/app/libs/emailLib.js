@@ -20,7 +20,7 @@ let sendEmail = (sendEmailOptions) => {
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"Lets Meet 👻" piyushagarwal490@gmail.com', // sender address
+        from: '" Meet 👻" piyushagarwal490@gmail.com', // sender address
         to: sendEmailOptions.email, // list of receivers
         subject: sendEmailOptions.subject, // Subject line
         text: `Dear ${sendEmailOptions.name},

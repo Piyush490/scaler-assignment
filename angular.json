@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lets-meet-app": {
+    "scaler-assignment": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/lets-meet-app",
+            "outputPath": "dist/scaler-assignment",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "lets-meet-app:build"
+            "browserTarget": "scaler-assignment:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "lets-meet-app:build:production"
+              "browserTarget": "scaler-assignment:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "lets-meet-app:build"
+            "browserTarget": "scaler-assignment:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
         }
       }
     },
-    "lets-meet-app-e2e": {
+    "scaler-assignment-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -111,11 +111,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "lets-meet-app:serve"
+            "devServerTarget": "scaler-assignment:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "lets-meet-app:serve:production"
+              "devServerTarget": "scaler-assignment:serve:production"
             }
           }
         },
@@ -131,5 +131,5 @@
       }
     }
   },
-  "defaultProject": "lets-meet-app"
+  "defaultProject": "scaler-assignment"
 }

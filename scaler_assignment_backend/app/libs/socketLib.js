@@ -51,7 +51,7 @@ let setServer = (server) => {
                                 } else {
 
                                     console.log(`${fullName} is online`);
-                                    //socket.room = 'LetsMeetRoom'
+                                   
                                     // joining global room.
                                     //socket.join(socket.room) 
 

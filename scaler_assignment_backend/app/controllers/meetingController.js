@@ -378,7 +378,7 @@ let addMeetingFunction = (req, res) => {
                         name: newMeetingObj.participantName,
                         subject: `Meeting Confirmed: ${newMeetingObj.meetingTopic}`,
                         html: `<h3> Your meeting is planned! </h3>
-                              <br> Hi , ${newMeetingObj.hostName} has scheduled a meeting via Lets Meet.
+                              <br> Hi , ${newMeetingObj.hostName} has scheduled a meeting.
                               <br>  
 
                             <div class="card" style="width: 18rem;">

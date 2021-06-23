@@ -88,7 +88,7 @@ export class SignupComponent implements OnInit {
         .subscribe((apiResponse) => {
 
           if (apiResponse.status == 200) {
-            this.toastr.success("Please check your email", "Registered with Lets Meet");
+            this.toastr.success("Please check your email", "Registered with Meet");
             setTimeout(() => {
               this.goToSignIn();
             }, 1000);//redirecting to signIn page

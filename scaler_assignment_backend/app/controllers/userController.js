@@ -254,10 +254,10 @@ let signUpFunction = (req, res) => {
                                 let sendEmailOptions = {
                                     email: newUserObj.email,
                                     name: newUserObj.firstName + ' ' + newUserObj.lastName,
-                                    subject: 'Welcome to Lets Meet ',
+                                    subject: 'Welcome ',
                                     html: `<b> Dear ${newUserObj.firstName}</b><br> Hope you are doing well. 
                                     <br>Welcome to our Meeting Planner App <br>
-                                    Please click on following link to verify your account with Lets Meet.<br>
+                                    Please click on following link to verify your account with Meet.<br>
                                     <br> <a href="${applicationUrl}/verify-email/${newUserObj.userId}">Click Here</a>                                     
                                     `
                                 }
@@ -549,7 +549,7 @@ let resetPasswordFunction = (req, res) => {
                     console.log(tokenDetails)
                     let sendEmailOptions = {
                         email: tokenDetails.userDetails.email,
-                        subject: 'Reset Password for Lets Meet ',
+                        subject: 'Reset Password for Meet ',
                         html: `<h4> Hi ${tokenDetails.userDetails.firstName}</h4>
                             <p>
                                 We got a request to reset your password associated with this ${tokenDetails.userDetails.email} . <br>
@@ -557,7 +557,7 @@ let resetPasswordFunction = (req, res) => {
                                 <br> <a href="${applicationUrl}/reset-password/${options.validationToken}">Click Here</a>                                 
                             </p>
     
-                            <br><b>Lets Meet</b>
+                            <br><b> Meet</b>
                                         `
                     }
     
@@ -658,12 +658,12 @@ let updatePasswordFunction = (req, res) => {
 
                     let sendEmailOptions = {
                         email: userDetails.email,
-                        subject: 'Password Updated for Lets Meet ',
+                        subject: 'Password Updated for Meet ',
                         html: `<h4> Hi ${userDetails.firstName}</h4>
                         <p>
                             Password updated successfully.
                         </p>
-                        <h3> Thanks for using Lets Meet </h3>
+                        <h3> Thanks for using Meet </h3>
                                     `
                     }
 
@@ -789,12 +789,12 @@ let changePasswordFunction = (req, res) => {
 
                     let sendEmailOptions = {
                         email: userDetails.email,
-                        subject: 'Password Updated for Lets Meet',
+                        subject: 'Password Updated for Meet',
                         html: `<h4> Hi ${userDetails.firstName}</h4>
                         <p>
                             Password updated successfully.
                         </p>
-                        <h3> Thanks for using Lets Meet </h3>
+                        <h3> Thanks for using Meet </h3>
                                     `
                     }
                     console.log(sendEmailOptions)
